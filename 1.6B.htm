@@ -1,0 +1,144 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Aptos;
+	panose-1:2 11 0 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoChpDefault
+	{font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-HK style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>HTML</p>
+
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
+
+<p class=MsoNormal>&lt;html lang=&quot;en&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;head&gt;</p>
+
+<p class=MsoNormal>&lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;style&gt;</p>
+
+<p class=MsoNormal>  html, body {</p>
+
+<p class=MsoNormal>    margin: 0;</p>
+
+<p class=MsoNormal>    padding: 0;</p>
+
+<p class=MsoNormal>    height: 100%;</p>
+
+<p class=MsoNormal>    display: flex;</p>
+
+<p class=MsoNormal>    align-items: center;</p>
+
+<p class=MsoNormal>    justify-content: center;</p>
+
+<p class=MsoNormal>    background: #ffffff;</p>
+
+<p class=MsoNormal>    font-family: -apple-system, BlinkMacSystemFont,
+&quot;Segoe UI&quot;, Roboto, sans-serif;</p>
+
+<p class=MsoNormal>    overflow: hidden;</p>
+
+<p class=MsoNormal>  }</p>
+
+<p class=MsoNormal>  #counter {</p>
+
+<p class=MsoNormal>    font-size: 48px;</p>
+
+<p class=MsoNormal>    font-weight: 700;</p>
+
+<p class=MsoNormal>    color: #1e293b;</p>
+
+<p class=MsoNormal>  }</p>
+
+<p class=MsoNormal>&lt;/style&gt;</p>
+
+<p class=MsoNormal>&lt;/head&gt;</p>
+
+<p class=MsoNormal>&lt;body&gt;</p>
+
+<p class=MsoNormal>  &lt;div id=&quot;counter&quot;&gt;0&lt;/div&gt;</p>
+
+<p class=MsoNormal>  &lt;script&gt;</p>
+
+<p class=MsoNormal>    const target = 1.4;     // Change this to your target
+number</p>
+
+<p class=MsoNormal>    const suffix = &quot;B+&quot;;    // Change this to
+&quot;+&quot;, &quot;%&quot;, &quot;M+&quot;, or &quot;&quot;</p>
+
+<p class=MsoNormal>    const duration = 1500;  // Animation speed in
+milliseconds (1500 = 1.5s)</p>
+
+<p class=MsoNormal>    const startTime = performance.now();</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    function update(now) {</p>
+
+<p class=MsoNormal>      const progress = Math.min((now - startTime) /
+duration, 1);</p>
+
+<p class=MsoNormal>      const easeOut = 1 - Math.pow(1 - progress, 3);</p>
+
+<p class=MsoNormal>     
+document.getElementById(&quot;counter&quot;).textContent = (easeOut *
+target).toFixed(1) + suffix;</p>
+
+<p class=MsoNormal>      if (progress &lt; 1) requestAnimationFrame(update);</p>
+
+<p class=MsoNormal>    }</p>
+
+<p class=MsoNormal>    requestAnimationFrame(update);</p>
+
+<p class=MsoNormal>  &lt;/script&gt;</p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+</div>
+
+</body>
+
+</html>
